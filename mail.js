@@ -5,15 +5,15 @@ async function sendMail() {
     const transporter = nodemailer.createTransport({
         service: 'gmail', // defining SMTP service
         auth: {
-            user: '8789681673aditya@gmail.com',
-            pass: 'igik mthq zvwz hyix', // Correct password
+            user: '',   /// enter your mail
+            pass: '', // Correct password get it from app password from your google account
         }
     });
 
     // configure email Content
     const mailOptions = {
-        from: '8789681673aditya@gmail.com',
-        to: 'adityay1080@gmail.com',
+        from: '',  // your mail here
+        to: ' ',  // recievers mail here
         subject: 'Welcome to NodeJs app',
         text: 'hello user, welcome to NodeJs' // Corrected typo: 'hello uiser' to 'hello user'
     };
